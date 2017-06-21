@@ -5,6 +5,10 @@
     	border-bottom-style: solid;
     	border-bottom-color: #cccccc;
     	border-bottom-width: medium;
+		float: none;
+		line-height: 5;
+		position: fixed;
+		bottom: 0;
 	}
 
 	.banner {
@@ -232,5 +236,207 @@
 
 	body {
 		margin: 0 0 80px;
+	}
+
+	@media screen and (max-width: 640px) {
+	    .name {
+	    	width: 100%;
+	    	text-align: center;
+	    }
+	    .banner {
+	    	width: 100%;
+	    }
+
+	    .banner > ul> li {
+			border-bottom: 2px solid #cccccc;
+		    padding: 0px 0px 0 0px;
+		    float: left;
+		    background-color: white;
+		    width: calc(100%/3);
+		    text-align: center;
+			line-height: 300%;
+			margin-bottom: 15px;
+		}
+
+		.content {
+			width: 580px;
+			padding: 0;
+			margin: 15px;
+		}
+
+		.personal_info {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		.personal_info_header {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			padding-left: 35px;
+		}
+
+		.personal_info_border {
+			width: 515px;
+		}
+
+		.personal_info_content {
+			padding: 25px;
+		}
+
+		.personal_info::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.personal_info_content > img {
+			height: 425px;
+    		width: 300px;
+    		text-align: center;
+    		padding: 5px 120px;
+		}
+
+		.contact_info {
+			width: 580px;
+			padding: 0;
+			margin-top: 15px;
+			margin-bottom: 25px;
+			height: 150px;
+		}
+
+		.contact_info_header {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			padding-left: 35px;
+			text-align: left;
+		}
+
+		.contact_info_border {
+	  		border-bottom: 2px solid #cccccc;
+		    position: absolute;
+		    width: 515px;
+		    margin-left: 30px;
+		    margin-top: 60px;
+		}
+
+		.contact_info_content {
+			padding: 5px 35px 15px 35px;
+	    	margin-top: 65px;
+	    	width: 270px;
+		}
+
+		.image {
+			clear: both;
+			margin-left: 35px;
+			margin-bottom: 10px;
+			height: 350px;
+			width: 375px;
+		}
+
+		.image > img {
+			clear: both;
+			height: 350px;
+			width: 375px;
+		}
+
+		.image > h2 {
+			clear: both;
+			width: 375px;
+		}
+	}
+
+	@media screen and (max-width: 768px) and (min-width: 641px) {
+	    .banner {
+	    	width: 720px;
+	    }
+
+	    .content {
+			width: 720px;
+			padding: 0;
+			margin: 15px;
+		}
+
+		.personal_info {
+			width: 720px;
+			padding: 0;
+			margin: 0;
+		}
+
+		.personal_info_header {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			padding-left: 35px;
+		}
+
+		.personal_info_border {
+			width: 660px;
+		}
+
+		.personal_info_content {
+			padding: 25px;
+		}
+
+		.personal_info::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.personal_info_content > img {
+			height: 425px;
+    		width: 300px;
+    		text-align: center;
+    		padding: 5px 20px;
+		}
+
+		.contact_info {
+			width: 720px;
+			padding: 0;
+			margin-top: 15px;
+			margin-bottom: 25px;
+			height: 150px;
+		}
+
+		.contact_info_header {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			padding-left: 35px;
+			text-align: left;
+		}
+
+		.contact_info_border {
+	  		border-bottom: 2px solid #cccccc;
+		    position: absolute;
+		    width: 515px;
+		    margin-left: 30px;
+		    margin-top: 60px;
+		}
+
+		.contact_info_content {
+			padding: 5px 35px 15px 35px;
+	    	margin-top: 65px;
+	    	width: 270px;
+		}
+
+		.image {
+			margin-left: 15px;
+			margin-bottom: 10px;
+			height: 225px;
+			width: 250px;
+		}
+
+		.image > img {
+			height: 225px;
+			width: 250px;
+		}
+
+		.image > h2 {
+			width: 250px;
+		}
 	}
 </style>
